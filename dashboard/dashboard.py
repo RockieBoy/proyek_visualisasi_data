@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-main_data = pd.read_csv("main_data.csv", parse_dates=["dteday"])
+main_data = pd.read_csv("dashboard/main_data.csv", parse_dates=["dteday"])
 
 st.sidebar.header("Filter Rentang Tanggal")
 start_date, end_date = st.sidebar.date_input(
